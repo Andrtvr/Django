@@ -1,0 +1,6 @@
+127.0.0.1 - - [21/Feb/2017:15:58:51 +0300] "GET /login/ HTTP/1.1" 200 43 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/55.0.2883.87 Chrome/55.0.2883.87 Safari/537.36"
+127.0.0.1 - - [21/Feb/2017:15:58:52 +0300] "GET /favicon.ico HTTP/1.1" 404 1020 "http://127.0.0.1/login/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/55.0.2883.87 Chrome/55.0.2883.87 Safari/537.36"
+127.0.0.1 - - [21/Feb/2017:15:58:57 +0300] "GET /login/ HTTP/1.1" 200 43 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/55.0.2883.87 Chrome/55.0.2883.87 Safari/537.36"
+127.0.0.1 - - [21/Feb/2017:16:00:11 +0300] "GET /question/ HTTP/1.1" 404 1014 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/55.0.2883.87 Chrome/55.0.2883.87 Safari/537.36"
+127.0.0.1 - - [21/Feb/2017:16:00:16 +0300] "GET /question/123 HTTP/1.1" 301 5 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/55.0.2883.87 Chrome/55.0.2883.87 Safari/537.36"
+127.0.0.1 - - [21/Feb/2017:16:00:16 +0300] "GET /question/123/ HTTP/1.1" 200 33 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/55.0.2883.87 Chrome/55.0.2883.87 Safari/537.36"
