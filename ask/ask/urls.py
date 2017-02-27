@@ -26,6 +26,6 @@ urlpatterns = [
 	url(r'^question/(\d+)/$', include('question.urls')),
 	url(r'^ask/', include('ask_new.urls')),
  	url(r'^popular/', include('popular.urls')),
-	url(r'^new/', include('ask_new.urls'))
-
+	url(r'^new/', include('ask_new.urls')),
+	url(r'^dj/',include('dj.urls'))
 ]
