@@ -31,7 +31,8 @@ ALLOWED_HOSTS = [u'0.0.0.0']
 # Application definition
 
 INSTALLED_APPS = [
-    'dj',
+    'qa.apps.QaConfig',
+    'dj.apps.DjConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
