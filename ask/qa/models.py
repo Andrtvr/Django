@@ -3,7 +3,7 @@ from django.db import models, connection
 
 class Question(models.Model):
     title = models.CharField(max_length=30)
-    text = models.CharField(max_length=200)
+    text = models.TextField(max_length=200)
     added_at = models.DateTimeField('Date published')
     rating = models.IntegerField('Rating')
     author = models.TextField('Author')
@@ -13,7 +13,7 @@ class Answer(models.Model):
      text = models.CharField(max_length=200)
      added_at = models.DateTimeField('Date published')
      question = models.ForeignKey(Question, on_delete=models.CASCADE)
-     autor = models.TextField
+     autor = models.ForeignKey(Question, on_delete=models.CASCADE)
 
 
 class QuestionManager(models.Manager):
