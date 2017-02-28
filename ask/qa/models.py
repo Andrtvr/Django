@@ -6,14 +6,15 @@ class Question(models.Model):
     text = models.TextField(max_length=200)
     added_at = models.DateTimeField('Date published')
     rating = models.IntegerField('Rating')
-    author = models.TextField('Author')
+    author = models.TextField()
     likes = models.TextField('Likes')
+
 
 class Answer(models.Model):
      text = models.CharField(max_length=200)
      added_at = models.DateTimeField('Date published')
-     question = models.ForeignKey(Question, on_delete=models.CASCADE)
-     author = models.TextField()
+     question = models.TextField()
+     author = models.ForeignKey(Question, on_delete=models.CASCADE)
 
 
 class QuestionManager(models.Manager):
