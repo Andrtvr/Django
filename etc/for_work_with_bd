@@ -4,4 +4,4 @@ q = Question(title='whu', text = 'whu whu&', added_at = timezone.now(), rating =
 m = QuestionManager()
 q.save()
 q.id
-
+import

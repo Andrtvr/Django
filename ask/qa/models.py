@@ -4,7 +4,7 @@ from django.contrib.auth.models import User, UserManager
 
 
 class Question(models.Model):
-    title = models.TextField(max_length=30)
+    title = models.CharField(max_length=30)
     text = models.TextField(max_length=200)
     added_at = models.DateTimeField('Date published')
     rating = models.IntegerField('Rating')
