@@ -6,9 +6,9 @@ from django.contrib.auth.models import User, UserManager
 class Question(models.Model):
     title = models.CharField(max_length=30)
     text = models.TextField(max_length=200)
-    added_at = models.DateTimeField('Date published')
-    rating = models.IntegerField('Rating')
-    author = models.ForeignKey(User, on_delete=models.CASCADE, default='x')
+    added_at = models.DateTimeField(blank=True, auto_now_add=True)
+    rating = models.IntegerField(default=0)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
     likes = models.ManyToManyField(User, related_name='Likes')
 
 class Answer(models.Model):
