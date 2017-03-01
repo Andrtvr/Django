@@ -1,0 +1,2 @@
+2017/03/01 10:20:25 [error] 882#882: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /dj/ HTTP/1.1", upstream: "http://0.0.0.0:8000/dj/", host: "127.0.0.1"
+2017/03/01 10:20:27 [error] 882#882: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", upstream: "http://0.0.0.0:8000/favicon.ico", host: "127.0.0.1", referrer: "http://127.0.0.1/dj/"

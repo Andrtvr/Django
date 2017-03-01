@@ -28,3 +28,5 @@
 127.0.0.1 - - [27/Feb/2017:18:57:42 +0300] "GET /dj/ HTTP/1.1" 200 131 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/55.0.2883.87 Chrome/55.0.2883.87 Safari/537.36"
 127.0.0.1 - - [28/Feb/2017:10:00:41 +0300] "GET /dj/ HTTP/1.1" 200 131 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/55.0.2883.87 Chrome/55.0.2883.87 Safari/537.36"
 127.0.0.1 - - [28/Feb/2017:10:00:42 +0300] "GET /favicon.ico HTTP/1.1" 404 1024 "http://127.0.0.1/dj/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/55.0.2883.87 Chrome/55.0.2883.87 Safari/537.36"
+127.0.0.1 - - [01/Mar/2017:10:20:25 +0300] "GET /dj/ HTTP/1.1" 502 584 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/55.0.2883.87 Chrome/55.0.2883.87 Safari/537.36"
+127.0.0.1 - - [01/Mar/2017:10:20:27 +0300] "GET /favicon.ico HTTP/1.1" 502 584 "http://127.0.0.1/dj/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/55.0.2883.87 Chrome/55.0.2883.87 Safari/537.36"
