@@ -1,10 +1,10 @@
 from __future__ import unicode_literals
 from django.db import models, connection
+from django.contrib.auth.models import User, UserManager
 
 
-class Users(models.Model):
-     login = models.CharField(max_length=20)
-     Name = models.TextField()
+class Users(User):
+     objects = UserManager()
 
 
 
