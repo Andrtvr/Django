@@ -7,6 +7,8 @@ from django.contrib.auth.models import User, UserManager
  #    objects = UserManager()
 
 
+class Likes(models.Model):
+    User_name = models.ForeignKey(User)
 
 
 class Question(models.Model):
@@ -15,7 +17,7 @@ class Question(models.Model):
     added_at = models.DateTimeField('Date published')
     rating = models.IntegerField('Rating')
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    likes = models.TextField('Likes')
+    likes = models.ManyToManyField(Likes)
 
 
 class Answer(models.Model):
