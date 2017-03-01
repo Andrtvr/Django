@@ -3,8 +3,8 @@ from django.db import models, connection
 from django.contrib.auth.models import User, UserManager
 
 
-class Users(User):
-     objects = UserManager()
+#class Users(User):
+ #    objects = UserManager()
 
 
 
@@ -14,7 +14,7 @@ class Question(models.Model):
     text = models.TextField(max_length=200)
     added_at = models.DateTimeField('Date published')
     rating = models.IntegerField('Rating')
-    author = models.ForeignKey(Users, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
     likes = models.TextField('Likes')
 
 
