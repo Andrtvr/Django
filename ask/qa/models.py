@@ -29,7 +29,7 @@ class Question(models.Model):
     QuestionMa = QuestionManager()
 
 class Answer(models.Model):
-     text = models.textField(max_length=200)
+     text = models.TextField(max_length=200)
      added_at = models.DateTimeField('Date published')
      question = models.ForeignKey(Question)
      author = models.ForeignKey(User)

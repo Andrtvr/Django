@@ -5,3 +5,15 @@ m = QuestionManager()
 q.save()
 q.id
 import
+A)
+
+article = Article(author='Vasya', text='text'); article.save()
+
+B)
+article = Vasya.article_set.create(text='text')
+
+C)
+article = Article.objects.create(text='text', author=author)
+
+D)
+article = Article.objects.create(text=text, author_id=author.id)
