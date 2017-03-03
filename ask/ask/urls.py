@@ -27,5 +27,7 @@ urlpatterns = [
 	url(r'^ask/', include('ask_new.urls')),
  	url(r'^popular/', include('popular.urls')),
 	url(r'^new/', include('ask_new.urls')),
-	url(r'^dj/',include('dj.urls'))
+	url(r'^dj/',include('dj.urls')),
+	url(r'^/(?P<page>\w+)',include('main.urls'))
+
 ]
