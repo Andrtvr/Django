@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 from django.db import models, connection
 from django.contrib.auth.models import User, UserManager
+from django.core.urlresolvers import reverse
 
 class QuestionManager(models.Manager):
     def new(self):
@@ -27,10 +28,17 @@ class Question(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
     likes = models.ManyToManyField(User, related_name='Likes')
     questionMa = QuestionManager()
+    def __str__(self):
+        return self.text
+
+   # def get_url(self):
+    #    return reverse ('qa:page', kwargs={'slug': self.slug})
 
 class Answer(models.Model):
      text = models.TextField(max_length=200)
      added_at = models.DateTimeField('Date published')
      question = models.ForeignKey(Question)
      author = models.ForeignKey(User)
+     def __str__(self):
+         return self.text
 

@@ -20,7 +20,7 @@ from django.contrib import admin
 urlpatterns = [
 	url(r'^admin/', admin.site.urls),
 	url(r'^qa/', include('qa.urls')),
- 	url(r'^$', include('ask_new.urls')), #koren perekidivaet ns ask
+ 	url(r'^$', include('qa.urls')), #koren perekidivaet ns ask
 	url(r'^login/', include('login.urls')),
 	url(r'^signup/', include('signup.urls')),
 	url(r'^question/(\d+)/$', include('question.urls')),
@@ -28,6 +28,6 @@ urlpatterns = [
  	url(r'^popular/', include('popular.urls')),
 	url(r'^new/', include('ask_new.urls')),
 	url(r'^dj/',include('dj.urls')),
-	url(r'^/(?P<page>\w+)',include('main.urls'))
+	#url(r'^/(?P<page>\w+)',include('main.urls'))
 
 ]
