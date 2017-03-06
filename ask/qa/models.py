@@ -27,9 +27,11 @@ class Question(models.Model):
     rating = models.IntegerField(default=0)
     author = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
     likes = models.ManyToManyField(User, related_name='Likes')
-    questionMa = QuestionManager()
+    qm = QuestionManager()
     def __str__(self):
         return self.text
+
+
 
    # def get_url(self):
     #    return reverse ('qa:page', kwargs={'slug': self.slug})

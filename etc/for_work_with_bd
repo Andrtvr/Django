@@ -1,6 +1,6 @@
 from qa.models import Question, Answer, QuestionManager
 from django.utils import timezone
-q = Question(title='whu', text = 'whu whu&', added_at = timezone.now(), rating = 3, author='Poroshenko' )
+q = Question(title='what', text = 'Whaaaat', added_at = timezone.now(), rating = 3 )
 m = QuestionManager()
 q.save()
 q.id
